@@ -1,4 +1,14 @@
 package strategy.movementstrategies;
 
-public class QueenMovementStrategy {
+import strategy.MovementStrategy;
+import utils.Board;
+import utils.Cell;
+
+public class QueenMovementStrategy implements MovementStrategy {
+    @Override
+    public boolean canMove(Board board, Cell from, Cell to) {
+        int rowDiff = Math.abs(to.getRow() - from.getRow());
+        int colDiff = Math.abs(to.getCol() - from.getCol());
+        return (rowDiff == colDiff) || (from.getRow() == to.getRow() || from.getCol() == to.getCol());
+    }
 }

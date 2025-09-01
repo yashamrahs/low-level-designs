@@ -1,16 +1,12 @@
-package piecefactory.pieces;
+package factory.pieces;
 
 import enums.Color;
-import piecefactory.Piece;
+import strategy.movementstrategies.BishopMovementStrategy;
+import utils.Board;
+import utils.Cell;
 
 public class Bishop extends Piece {
-
     public Bishop(Color color) {
-        super(color);
-    }
-
-    @Override
-    public boolean canMove() {
-        return false;
+        super(color, new BishopMovementStrategy());
     }
 }

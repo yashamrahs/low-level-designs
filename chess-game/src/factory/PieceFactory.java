@@ -1,7 +1,7 @@
-package piecefactory;
+package factory;
 
 import enums.Color;
-import piecefactory.pieces.*;
+import factory.pieces.*;
 
 public class PieceFactory {
     public static Piece createPiece(String piece, Color color) {

@@ -1,16 +1,10 @@
-package piecefactory.pieces;
+package factory.pieces;
 
 import enums.Color;
-import piecefactory.Piece;
+import strategy.movementstrategies.PawnMovementStrategy;
 
 public class Pawn extends Piece {
-
     public Pawn(Color color) {
-        super(color);
-    }
-
-    @Override
-    public boolean canMove() {
-        return false;
+        super(color, new PawnMovementStrategy());
     }
 }
