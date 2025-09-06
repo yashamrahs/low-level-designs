@@ -1,4 +1,5 @@
 package enums;
 
-public class VehicleSize {
+public enum VehicleSize {
+    SMALL, MEDIUM, LARGE;
 }
