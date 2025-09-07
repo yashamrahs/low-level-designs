@@ -1,4 +1,9 @@
 package factory.vehicle;
 
-public class Car {
+import enums.VehicleSize;
+
+public class Car extends Vehicle {
+    public Car(String licenseNumber) {
+        super(licenseNumber, VehicleSize.MEDIUM);
+    }
 }
