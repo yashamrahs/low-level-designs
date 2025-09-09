@@ -1,4 +1,5 @@
 package enums;
 
-public class ElevatorState {
+public enum ElevatorState {
+    MOVING, STOPPED, IDLE, MAINTENANCE
 }
