@@ -1,4 +1,5 @@
 package command;
 
-public class ElevatorCommand {
+public interface ElevatorCommand {
+    void execute();
 }
